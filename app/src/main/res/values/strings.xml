@@ -12,4 +12,6 @@
     <string name="title_activity_main">Friends Chat</string>
     <string name="photopickerbutton">Photo Picker Button</string>
     <string name="send">Send</string>
+    <string name="sender_name">Sender Name</string>
+    <string name="some_message">Some Message</string>
 </resources>
