@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "816691226125",
+    "firebase_url": "https://friendlychat-a216e.firebaseio.com",
+    "project_id": "friendlychat-a216e",
+    "storage_bucket": "friendlychat-a216e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816691226125:android:b1bb2a9ac8a1b9e192d744",
+        "android_client_info": {
+          "package_name": "com.teopinillo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816691226125-s274kp7pb956tdbbg3c7n6achnn2jotp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXKaPPUKmepKUaYhtpYcf0QLyaYP9hVGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816691226125-s274kp7pb956tdbbg3c7n6achnn2jotp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
