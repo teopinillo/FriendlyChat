@@ -1,15 +1,21 @@
-public class Message {
+package com.teopinillo.friendlychat;
+
+import androidx.recyclerview.widget.RecyclerView;
+
+public class Message  {
     String text;
     String name;
     String photoUrl;
 
     public Message(String text, String name, String photoUrl) {
+        super();
         this.text = text;
         this.name = name;
         this.photoUrl = photoUrl;
     }
 
     public Message() {
+        super();
     }
 
     public String getText() {
