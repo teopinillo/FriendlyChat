@@ -16,6 +16,9 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,11 +31,21 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton btPhotoPicker;
     private EditText etMessage;
     private Button btSend;
+    private String username = "Anonymus";
+
+    //TO be able to use databse we need to declare this
+    //two classes.
+    private FirebaseDatabase firebaseDatabase;
+    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //instance the database objects
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference().child("messages");
 
         //find all views
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -87,6 +100,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable editable) {
                 //TODO
+            }
+        });
+
+        btSend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Send message
+                //Creating the message
+                Message message = new Message( username, etMessage.getText().toString(),"" );
+                //clear input box
+                etMessage.setText("");
             }
         });
 
