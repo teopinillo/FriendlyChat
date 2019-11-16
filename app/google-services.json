@@ -10,10 +10,18 @@
       "client_info": {
         "mobilesdk_app_id": "1:816691226125:android:b1bb2a9ac8a1b9e192d744",
         "android_client_info": {
-          "package_name": "com.teopinillo"
+          "package_name": "com.teopinillo.friendlychat"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "816691226125-p1tj70dk5v47jo4q4e2cika8anqp37gv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teopinillo",
+            "certificate_hash": "bb0fb96cce7d4909ac606681b456b2de4b06fc5f"
+          }
+        },
         {
           "client_id": "816691226125-s274kp7pb956tdbbg3c7n6achnn2jotp.apps.googleusercontent.com",
           "client_type": 3
