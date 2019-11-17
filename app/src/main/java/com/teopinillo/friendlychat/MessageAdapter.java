@@ -11,10 +11,10 @@ import java.util.List;
 
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MyViewHolder> {
 
-    protected Context context;
-    protected List<Message> messages;
+    private Context context;
+    private List<Message> messages;
 
-    public MessageAdapter(Context context, List<Message> messages) {
+    MessageAdapter(Context context, List<Message> messages) {
         this.context = context;
         this.messages = messages;
     }
@@ -37,10 +37,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MyViewHo
     }
 
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView tvMessage;
-        public TextView tvSender;
-        public MyViewHolder(View itemView) {
+    static class MyViewHolder extends RecyclerView.ViewHolder {
+         TextView tvMessage;
+         TextView tvSender;
+         MyViewHolder(View itemView) {
             super(itemView);
             tvMessage = itemView.findViewById(R.id.tvMessage);
             tvSender = itemView.findViewById(R.id.tvAuthor);
